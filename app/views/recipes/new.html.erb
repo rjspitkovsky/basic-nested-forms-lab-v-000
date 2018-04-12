@@ -5,14 +5,10 @@
 <%= f.text_field :title %>
 
 <%= f.fields_for :ingredients do |ingredient| %>
-<%= ingredient.label :ingredient_name_1 %>
-<%= ingredient.text_field :ingredient_name_1 %>
-<%= ingredient.label :ingredient_quantity_1 %>
-<%= ingredient.text_field :ingredient_quantity_1 %>
-<%= ingredient.label :ingredient_name_2 %>
-<%= ingredient.text_field :ingredient_name_2 %>
-<%= ingredient.label :ingredient_quantity_2 %>
-<%= ingredient.text_field :ingredient_quantity_2 %>
+<%= ingredient.label :name %>
+<%= ingredient.text_field :name %>
+<%= ingredient.label :quantity %>
+<%= ingredient.text_field :quantity %>
 <% end %>
 
 <%= f.submit %>
